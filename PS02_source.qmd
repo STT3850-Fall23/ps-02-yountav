@@ -210,11 +210,11 @@ ggplot(data = nc, aes(x = weeks, y = gained, color = premie))+
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 4 Answers"}
-**A.** Delete this and put your text answer here.
+**A.** Adding the argument "color = premie" added a premie key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent premie births. This also added the colors to the graph's coordinates. 
 
-**B.** Delete this and put your text answer here.
+**B.** There are now four variables displayed on the plot: weeks of pregnancy, maternal weight gain, and whether the birth was full-term or premature. 
 
-**C.** Delete this and put your text answer here.
+**C.** The cutoff for premie babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term. 
 
 ```{r}
 nc %>% 
