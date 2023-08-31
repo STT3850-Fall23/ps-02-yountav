@@ -446,7 +446,7 @@ ggplot(data = nc, aes(x = weeks, y = mage)) +
 
 ```
 
--   In this sample, the relationship between the mother's age and the duration of the pregnancy doesn't have much of a negative or positive correlation.
+-   In this sample, the relationship between the mother's age and the duration of the pregnancy doesn't have much of a negative or positive correlation. However, there is somewhat of a positive correlation, meaning that as the mother's age increases, the duration of pregnancy extends slightly. 
 :::
 
 # Data Visualization Table
