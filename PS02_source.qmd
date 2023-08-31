@@ -410,11 +410,13 @@ Using a data visualization, visually assess: Is the variable for father's age (`
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 11 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = fage)) +
+  geom_histogram(binwidth = 1, color = "black", fill = "blue") + labs(x = "Father's Age")
+  theme_bw()
 
 ```
 
--   Delete this and put your text answer here.
+-   The variable for father's age is not symmetrical. The histogram skews more towards fathers between the ages of 30-35 with some high numbers at around ages 21 and 22. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 12"}
