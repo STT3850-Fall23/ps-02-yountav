@@ -337,12 +337,14 @@ Make a histogram of newborn birth `weight` split by `gender` of the child. Set t
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 8 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
-
+ggplot(data = nc, aes(x = weight)) +
+  geom_histogram(binwidth = 0.5, color = "black", fill = "lightblue") +
+  facet_wrap(~ gender, ncol = 1) +
+  theme_bw()
 
 ```
 
--   Delete this and put your text answer here.
+-   The gender that appears to have the slightly larger average birth weight are male newborns. 
 :::
 
 ## Boxplots
