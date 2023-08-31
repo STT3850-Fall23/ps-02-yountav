@@ -303,8 +303,8 @@ Make a histogram of the birth `weight` of newborns (which is in lbs), include a 
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 7 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
-
+ggplot(data = nc, aes(x = weight)) + labs(x = "Newborn's Weight (lbs)", y = "Number of Total Births in NC", title = "Relationship between Newborn's Weight and Total Births in NC") +
+  geom_histogram(binwidth = 1, color = "blue", fill = "lightblue")
   
 ```
 :::
