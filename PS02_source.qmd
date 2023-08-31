@@ -114,7 +114,7 @@ What type of variable is `R` considering the variable `habit` to be? What variab
 
 ```
 
--   "R" is considering the variable "habit" to be a character variable, or <chr>. "R" considers "visits" to be a number with decimals variable, or <dbl>
+-   "R" is considering the variable "habit" to be a character variable, or `<chr>`. "R" considers "visits" to be a number with decimals variable, or `<dbl>`
 :::
 
 ## The Data Viewer
@@ -175,7 +175,7 @@ Is there a positive or negative relationship between `weight` and `weeks`? (text
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 2 Answers"}
--   There is a positive relationship between "weight" and "weeks". This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well. 
+-   There is a positive relationship between `weight` and `weeks`. This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 3"}
@@ -210,11 +210,11 @@ ggplot(data = nc, aes(x = weeks, y = gained, color = premie))+
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 4 Answers"}
-**A.** Adding the argument "color = premie" added a premie key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent premie births. This also added the colors to the graph's coordinates. 
+**A.** Adding the argument `color = premie` added a `premie` key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent `premie` births. This also added the colors to the graph's coordinates. 
 
 **B.** There are now four variables displayed on the plot: weeks of pregnancy, maternal weight gain, and whether the birth was full-term or premature. 
 
-**C.** The cutoff for premie babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term. 
+**C.** The cutoff for `premie` babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term. 
 
 ```{r}
 nc %>% 
@@ -229,11 +229,14 @@ Make a new scatterplot that shows a mothers age on the x axis (variable called `
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 5 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = mage, y = weight, color = gender))+ 
+  geom_point() + 
+  labs(x = "Mother's Age (in years)", y = "Newborn's Weight (lbs)") + 
+  theme_bw()
 
 ```
 
--   Delete this and put your text answer here.
+-   There is very little correlation between the mother's age and the newborn's weight, however there is a slight correlation demonstrating that as the mother's age increases, so does the newborn's weight. 
 :::
 
 ## Histograms

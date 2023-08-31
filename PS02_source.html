@@ -98,7 +98,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">Last modified on August 31, 2023 09:54:26 Eastern Daylight Time</p>
+      <p class="date">Last modified on August 31, 2023 10:05:17 Eastern Daylight Time</p>
     </div>
   </div>
   
@@ -274,7 +274,7 @@ Problem 1 Answers
 <div id="callout-7" class="callout-7-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li>“R” is considering the variable “habit” to be a character variable, or <chr>. “R” considers “visits” to be a number with decimals variable, or <dbl></dbl></chr></li>
+<li>“R” is considering the variable “habit” to be a character variable, or <code>&lt;chr&gt;</code>. “R” considers “visits” to be a number with decimals variable, or <code>&lt;dbl&gt;</code></li>
 </ul>
 </div>
 </div>
@@ -397,7 +397,7 @@ Problem 2 Answers
 <div id="callout-12" class="callout-12-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <ul>
-<li>There is a positive relationship between “weight” and “weeks”. This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well.</li>
+<li>There is a positive relationship between <code>weight</code> and <code>weeks</code>. This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well.</li>
 </ul>
 </div>
 </div>
@@ -481,9 +481,9 @@ Problem 4 Answers
 </div>
 <div id="callout-16" class="callout-16-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
-<p><strong>A.</strong> Adding the argument “color = premie” added a premie key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent premie births. This also added the colors to the graph’s coordinates.</p>
+<p><strong>A.</strong> Adding the argument <code>color = premie</code> added a <code>premie</code> key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent <code>premie</code> births. This also added the colors to the graph’s coordinates.</p>
 <p><strong>B.</strong> There are now four variables displayed on the plot: weeks of pregnancy, maternal weight gain, and whether the birth was full-term or premature.</p>
-<p><strong>C.</strong> The cutoff for premie babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term.</p>
+<p><strong>C.</strong> The cutoff for <code>premie</code> babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term.</p>
 <div class="cell" data-layout-align="center">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>nc <span class="sc">%&gt;%</span> </span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(premie) <span class="sc">%&gt;%</span> </span>
@@ -525,10 +525,20 @@ Problem 5 Answers
 <div id="callout-18" class="callout-18-contents callout-collapse collapse show">
 <div class="callout-body-container callout-body">
 <div class="cell" data-layout-align="center">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Type your code and comments inside the code chunk</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> nc, <span class="fu">aes</span>(<span class="at">x =</span> mage, <span class="at">y =</span> weight, <span class="at">color =</span> gender))<span class="sc">+</span> </span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span> </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"Mother's Age (in years)"</span>, <span class="at">y =</span> <span class="st">"Newborn's Weight (lbs)"</span>) <span class="sc">+</span> </span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="PS02_source_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
 </div>
 <ul>
-<li>Delete this and put your text answer here.</li>
+<li>There is very little correlation between the mother’s age and the newborn’s weight, however there is a slight correlation demonstrating that as the mother’s age increases, so does the newborn’s weight.</li>
 </ul>
 </div>
 </div>
