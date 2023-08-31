@@ -163,7 +163,7 @@ Finally, we can also add axes labels and a title to the plot as shown below. Aga
 ::: {.callout-caution icon="false" title="R Code"}
 ```{r}
 ggplot(data = nc, aes(x = weeks, y = weight)) + 
-  geom_point() + 
+  geom_point() +
   labs(x = "Length of pregnancy (in weeks)", 
        y = "Birth weight of baby (lbs)", 
        title = "Relationship between newborn weight of baby \n and length of  pregnancy")
