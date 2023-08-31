@@ -439,11 +439,14 @@ Using a data visualization, visually assess: (in this sample) as a mother's age 
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 13 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = weeks, y = mage)) + 
+  geom_point() + 
+  labs(x = "Duration of Pregnancy (in weeks)", y = "Mother's Age (in years)") + 
+  theme_bw()
 
 ```
 
--   Delete this and put your text answer here.
+-   In this sample, the relationship between the mother's age and the duration of the pregnancy doesn't have much of a negative or positive correlation. 
 :::
 
 # Data Visualization Table
