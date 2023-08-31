@@ -424,11 +424,13 @@ Using a data visualization, visually assess: (in this sample) is the median birt
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 12 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = weight, y = whitemom)) + labs(x = "Newborn's Weight (in lbs)", y = "White or Non-white", title = "Relationship between Newborn's Weight and Maternal Racial Status") +
+  geom_boxplot() + 
+  theme_bw()
 
 ```
 
--   Delete this and put your text answer here.
+-   In this sample, the median birth weight for babies is greater for white moms compared to non-white moms. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 13"}
