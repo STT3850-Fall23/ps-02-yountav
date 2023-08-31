@@ -175,7 +175,7 @@ Is there a positive or negative relationship between `weight` and `weeks`? (text
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 2 Answers"}
--   Delete this and put your text answer here.
+-   There is a positive relationship between "weight" and "weeks". This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 3"}
