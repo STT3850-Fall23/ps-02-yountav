@@ -184,7 +184,7 @@ Make a graph showing `weeks` again on the x axis and the variable `gained` on th
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 3 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = weeks, y = gained)) + geom_point() + labs(x = "Length of Pregnancy (in weeks)", y = "Maternal Weight Gain (lbs)", title = "Relationship between Maternal Weight Gain and Pregnancy Length")  + theme_bw()
 
 ```
 :::
