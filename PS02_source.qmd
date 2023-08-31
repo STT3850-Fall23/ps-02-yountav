@@ -175,7 +175,7 @@ Is there a positive or negative relationship between `weight` and `weeks`? (text
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 2 Answers"}
--   There is a positive relationship between `weight` and `weeks`. This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well. 
+-   There is a positive relationship between `weight` and `weeks`. This can be seen by looking at the coordinates between the x and y axis. The graph shows a positive correlation and shows that as the length of the pregnancy progresses, the birth weight of the baby increases as well.
 :::
 
 ::: {.callout-note icon="false" title="Problem 3"}
@@ -210,11 +210,11 @@ ggplot(data = nc, aes(x = weeks, y = gained, color = premie))+
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 4 Answers"}
-**A.** Adding the argument `color = premie` added a `premie` key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent `premie` births. This also added the colors to the graph's coordinates. 
+**A.** Adding the argument `color = premie` added a `premie` key to the side of the graph which demonstrates that the coral colored coordinates represent full-term births and the blue colored coordinates represent `premie` births. This also added the colors to the graph's coordinates.
 
-**B.** There are now four variables displayed on the plot: weeks of pregnancy, maternal weight gain, and whether the birth was full-term or premature. 
+**B.** There are now four variables displayed on the plot: weeks of pregnancy, maternal weight gain, and whether the birth was full-term or premature.
 
-**C.** The cutoff for `premie` babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term. 
+**C.** The cutoff for `premie` babies occurs at around the 36-37 week time frame. After 37 weeks, the birth is considered full-term.
 
 ```{r}
 nc %>% 
@@ -236,7 +236,7 @@ ggplot(data = nc, aes(x = mage, y = weight, color = gender))+
 
 ```
 
--   There is very little correlation between the mother's age and the newborn's weight, however there is a slight correlation demonstrating that as the mother's age increases, so does the newborn's weight. 
+-   There is very little correlation between the mother's age and the newborn's weight, however there is a slight correlation demonstrating that as the mother's age increases, so does the newborn's weight.
 :::
 
 ## Histograms
@@ -283,9 +283,9 @@ Inspect the histogram of the `weeks` variable. Answer each of the following with
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 6 Answers"}
-**A.** `count` represents the number of total births in North Carolina in that given time frame. This can be seen by the steep increase during the 38 to 40 week period, which is when most births occur. 
+**A.** `count` represents the number of total births in North Carolina in that given time frame. This can be seen by the steep increase during the 38 to 40 week period, which is when most births occur.
 
-**B.** The average length of pregnancies in weeks appears to be from about 38 to 40 weeks. 
+**B.** The average length of pregnancies in weeks appears to be from about 38 to 40 weeks.
 
 ```{r}
 ggplot(data = nc, aes(x = weeks))+ 
@@ -294,7 +294,7 @@ ggplot(data = nc, aes(x = weeks))+
 
 ```
 
-**C.** After changing the binwidth to 100, there is only 1 bin that can fit in this frame and it shows about 800 cases within the single bin. 
+**C.** After changing the binwidth to 100, there is only 1 bin that can fit in this frame and it shows about 800 cases within the single bin.
 :::
 
 ::: {.callout-note icon="false" title="Problem 7"}
@@ -344,7 +344,7 @@ ggplot(data = nc, aes(x = weight)) +
 
 ```
 
--   The gender that appears to have the slightly larger average birth weight are male newborns. 
+-   The gender that appears to have the slightly larger average birth weight are male newborns.
 :::
 
 ## Boxplots
@@ -382,7 +382,7 @@ ggplot(data = nc, aes(x = gained, y = mature)) + labs(x = "Maternal Weight Gaine
 
 ```
 
--   The median weight gain for mature mothers is higher than the median weight gain for younger mothers. 
+-   The median weight gain for mature mothers is higher than the median weight gain for younger mothers.
 :::
 
 ::: {.callout-note icon="false" title="Problem 10"}
@@ -397,7 +397,7 @@ ggplot(data = nc, aes(x = weeks, y = habit)) + labs(x = "Pregnancy Progression (
 
 ```
 
--   In terms of spread throughout the entire boxplot, including outliers, non-smoking mothers have more variable. In terms of inside the boxplots and the averages, smoking mothers have more variable. 
+-   In terms of spread throughout the entire boxplot, including outliers, non-smoking mothers have more variable. In terms of inside the boxplots and the averages, smoking mothers have more variable.
 :::
 
 # More Practice
@@ -415,7 +415,7 @@ ggplot(data = nc, aes(x = fage)) +
 
 ```
 
--   The variable for father's age is not symmetrical. The histogram skews more towards fathers between the ages of 30-35 with some high numbers at around ages 21 and 22. 
+-   The variable for father's age is not symmetrical. The histogram skews more towards fathers between the ages of 30-35 with some high numbers at around ages 21 and 22.
 :::
 
 ::: {.callout-note icon="false" title="Problem 12"}
@@ -430,7 +430,7 @@ ggplot(data = nc, aes(x = weight, y = whitemom)) + labs(x = "Newborn's Weight (i
 
 ```
 
--   In this sample, the median birth weight for babies is greater for white moms compared to non-white moms. 
+-   In this sample, the median birth weight for babies is greater for white moms compared to non-white moms.
 :::
 
 ::: {.callout-note icon="false" title="Problem 13"}
@@ -446,7 +446,7 @@ ggplot(data = nc, aes(x = weeks, y = mage)) +
 
 ```
 
--   In this sample, the relationship between the mother's age and the duration of the pregnancy doesn't have much of a negative or positive correlation. 
+-   In this sample, the relationship between the mother's age and the duration of the pregnancy doesn't have much of a negative or positive correlation.
 :::
 
 # Data Visualization Table
