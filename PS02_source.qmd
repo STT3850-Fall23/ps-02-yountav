@@ -411,8 +411,7 @@ Using a data visualization, visually assess: Is the variable for father's age (`
 ::: {.callout-important icon="false" collapse="false" title="Problem 11 Answers"}
 ```{r}
 ggplot(data = nc, aes(x = fage)) +
-  geom_histogram(binwidth = 1, color = "black", fill = "blue") + labs(x = "Father's Age")
-  theme_bw()
+  geom_histogram(binwidth = 1, color = "black", fill = "blue") + labs(x = "Father's Age") + theme_bw()
 
 ```
 
