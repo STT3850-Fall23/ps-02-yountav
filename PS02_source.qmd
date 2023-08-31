@@ -283,16 +283,18 @@ Inspect the histogram of the `weeks` variable. Answer each of the following with
 :::
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 6 Answers"}
-**A.** Delete this and put your text answer here.
+**A.** `count` represents the number of total births in North Carolina in that given time frame. This can be seen by the steep increase during the 38 to 40 week period, which is when most births occur. 
 
-**B.** Delete this and put your text answer here.
+**B.** The average length of pregnancies in weeks appears to be from about 38 to 40 weeks. 
 
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = weeks))+ 
+  geom_histogram(binwidth = 100, color = "black", fill = "steelblue") + 
+  theme_bw()
 
 ```
 
-**C.** Delete this and put your text answer here.
+**C.** After changing the binwidth to 100, there is only 1 bin that can fit in this frame and it shows about 800 cases within the single bin. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 7"}
