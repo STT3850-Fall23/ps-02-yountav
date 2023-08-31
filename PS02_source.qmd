@@ -376,11 +376,13 @@ Make a boxplot of the weight `gained` by moms, split by the maturity status of t
 
 ::: {.callout-important icon="false" collapse="false" title="Problem 9 Answers"}
 ```{r}
-# Type your code and comments inside the code chunk
+ggplot(data = nc, aes(x = gained, y = mature)) + labs(x = "Maternal Weight Gained (lbs)", y = "Maternal Maturity Status", title = "Relationship between Maternal Weight Gain and Maternal Maturity") +
+  geom_boxplot() + 
+  theme_bw()
 
 ```
 
--   Delete this and put your text answer here.
+-   The median weight gain for mature mothers is higher than the median weight gain for younger mothers. 
 :::
 
 ::: {.callout-note icon="false" title="Problem 10"}
